@@ -37,17 +37,30 @@ int main(void) {
 	}
 	
 	printf("%lf", (double)sum/num1);
-	*/
+	
 	
 	int row = 5;
-	for (int i=1;i<=row;i++){
-		for (int j = 0; j <row-i; j++) {
+	for (int i = 1; i <= row; i++) {
+		for (int j = 0; j < row - i; j++) {
 			printf(" ");
 		}
-		for (int j = 0; j < i*2-1; j++) {
+		for (int j = 0; j < i * 2 - 1; j++) {
 			printf("*");
 		}
 		printf("\n");
 	}
-
+	*/
+	
+	int arr[5];
+	printf("Please input five integers: "); scanf("%d %d %d %d %d",&arr[0], &arr[1], &arr[2], &arr[3], &arr[4]);
+	printf("Odd numbers: ");
+	for(int i = 0; i < 5; i++)
+		if (arr[i] % 2 == 1) 
+			printf("%d ", arr[i]);
+	printf("\n");
+	printf("Even numbers: ");
+	for (int i = 0; i < 5; i++)
+		if (arr[i] % 2 == 0)
+			printf("%d", arr[i]);
+	
 }
