@@ -1,6 +1,7 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <math.h>
-
+/*
 double gap(const int ptr[5]) {
 	double sum=0, avr;
 	for (int i = 0; i < 5; i++) {
@@ -16,9 +17,9 @@ double gap(const int ptr[5]) {
 	return sqrt(sum);
 
 }
+*/
 
 
-int main(void) {
 
 	/*
 	int arr1[6] = {1,2,3,4,5,6}, arr2[6] = {7,8,9,10,11,12};
@@ -35,7 +36,7 @@ int main(void) {
 	printf("Enter 5 real numbers: ");
 	scanf("%d %d %d %d %d", &arr[0], &arr[1], &arr[2], &arr[3], &arr[4]);
 	printf("%lf",gap(arr));
-	*/
+	
 
 	fputs("Input> ", stdout);
 	char name[100];
@@ -50,7 +51,35 @@ int main(void) {
 			name[i] = name[i] - gap;
 		}
 	}
-	sprintf(name, "%s", "output>");
+	char s[107];
+	sprintf("%s", "output>");
 	puts(name);
+	*/
+int main(void) {
+	typedef struct {
+		char name[30];
+		char country[30];
+		int popul;
+	}city;
 
+	city c[3];
+	printf("Input three cities: \n");
+	for (int i = 0; i < 3; i++) {
+		printf("Name> ");
+		fgets(c[i].name,sizeof(c[i].name), stdin);
+		c[i].name[strlen(c[i].name) - 1] = 0;
+		printf("Country> ");
+		fgets(c[i].country, sizeof(c[i].country), stdin);
+		c[i].country[strlen(c[i].country) - 1] = 0;
+		printf("Population> ");
+		scanf("%d", &c[i].popul);
+		getchar(); //scanf´Â ¿£ÅÍ ³²±è
+		printf("\n");
+		
+	}
+	printf("Printing the three cities:\n");
+	for (int i = 0; i < 3; i++) {
+		printf("%d. %s in %s with a population of %d people\n",i+1,c[i].name,c[i].country,c[i].popul);
+
+	}
 }
