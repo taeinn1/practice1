@@ -55,7 +55,7 @@ double gap(const int ptr[5]) {
 	sprintf("%s", "output>");
 	puts(name);
 	*/
-int main(void) {
+int main1(void) {
 	typedef struct {
 		char name[30];
 		char country[30];

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main2(void) {
 	int num1=3, num2=2;
 	int cur = 0, sum = 0;
 	/*
