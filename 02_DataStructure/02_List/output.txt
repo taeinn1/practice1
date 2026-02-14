@@ -1,0 +1,212 @@
+Name: Jongnogu, Men: 76876, Women: 82120
+Name: Junggu, Men: 65776, Women: 68859
+Name: Yongsangu, Men: 118835, Women: 125810
+Name: Seongdonggu, Men: 146424, Women: 154081
+Name: Gwangjingu, Men: 173000, Women: 187109
+Name: Dongdaemungu, Men: 175322, Women: 181692
+Name: Jungnanggu, Men: 197118, Women: 202444
+Name: Seongbukgu, Men: 214658, Women: 232398
+Name: Gangbukgu, Men: 151466, Women: 160103
+Name: Dobonggu, Men: 159420, Women: 167941
+Name: Nowongu, Men: 254188, Women: 272844
+Name: Eunpyeonggu, Men: 231998, Women: 252045
+Name: Seodaemungu, Men: 153152, Women: 169800
+Name: Mapogu, Men: 178977, Women: 202881
+Name: Yangcheongu, Men: 224379, Women: 233402
+Name: Gangseogu, Men: 282686, Women: 303215
+Name: Gurogu, Men: 215424, Women: 217064
+Name: Geumcheongu, Men: 126141, Women: 121694
+Name: Yeongdeungpogu, Men: 202969, Women: 204398
+Name: Dongjakgu, Men: 193718, Women: 207854
+Name: Gwanakgu, Men: 255211, Women: 254592
+Name: Seochogu, Men: 205282, Women: 223743
+Name: Gangnamgu, Men: 260378, Women: 283677
+Name: Songpagu, Men: 325080, Women: 348846
+Name: Gangdonggu, Men: 228044, Women: 235954
+
+
+List after deleting Jongnogu
+Name: Junggu, Men: 65776, Women: 68859
+Name: Yongsangu, Men: 118835, Women: 125810
+Name: Seongdonggu, Men: 146424, Women: 154081
+Name: Gwangjingu, Men: 173000, Women: 187109
+Name: Dongdaemungu, Men: 175322, Women: 181692
+Name: Jungnanggu, Men: 197118, Women: 202444
+Name: Seongbukgu, Men: 214658, Women: 232398
+Name: Gangbukgu, Men: 151466, Women: 160103
+Name: Dobonggu, Men: 159420, Women: 167941
+Name: Nowongu, Men: 254188, Women: 272844
+Name: Eunpyeonggu, Men: 231998, Women: 252045
+Name: Seodaemungu, Men: 153152, Women: 169800
+Name: Mapogu, Men: 178977, Women: 202881
+Name: Yangcheongu, Men: 224379, Women: 233402
+Name: Gangseogu, Men: 282686, Women: 303215
+Name: Gurogu, Men: 215424, Women: 217064
+Name: Geumcheongu, Men: 126141, Women: 121694
+Name: Yeongdeungpogu, Men: 202969, Women: 204398
+Name: Dongjakgu, Men: 193718, Women: 207854
+Name: Gwanakgu, Men: 255211, Women: 254592
+Name: Seochogu, Men: 205282, Women: 223743
+Name: Gangnamgu, Men: 260378, Women: 283677
+Name: Songpagu, Men: 325080, Women: 348846
+Name: Gangdonggu, Men: 228044, Women: 235954
+
+
+List after deleting Gandonggu
+Name: Junggu, Men: 65776, Women: 68859
+Name: Yongsangu, Men: 118835, Women: 125810
+Name: Seongdonggu, Men: 146424, Women: 154081
+Name: Gwangjingu, Men: 173000, Women: 187109
+Name: Dongdaemungu, Men: 175322, Women: 181692
+Name: Jungnanggu, Men: 197118, Women: 202444
+Name: Seongbukgu, Men: 214658, Women: 232398
+Name: Gangbukgu, Men: 151466, Women: 160103
+Name: Dobonggu, Men: 159420, Women: 167941
+Name: Nowongu, Men: 254188, Women: 272844
+Name: Eunpyeonggu, Men: 231998, Women: 252045
+Name: Seodaemungu, Men: 153152, Women: 169800
+Name: Mapogu, Men: 178977, Women: 202881
+Name: Yangcheongu, Men: 224379, Women: 233402
+Name: Gangseogu, Men: 282686, Women: 303215
+Name: Gurogu, Men: 215424, Women: 217064
+Name: Geumcheongu, Men: 126141, Women: 121694
+Name: Yeongdeungpogu, Men: 202969, Women: 204398
+Name: Dongjakgu, Men: 193718, Women: 207854
+Name: Gwanakgu, Men: 255211, Women: 254592
+Name: Seochogu, Men: 205282, Women: 223743
+Name: Gangnamgu, Men: 260378, Women: 283677
+Name: Songpagu, Men: 325080, Women: 348846
+
+
+List after deleting Eunpyeonggu
+Name: Junggu, Men: 65776, Women: 68859
+Name: Yongsangu, Men: 118835, Women: 125810
+Name: Seongdonggu, Men: 146424, Women: 154081
+Name: Gwangjingu, Men: 173000, Women: 187109
+Name: Dongdaemungu, Men: 175322, Women: 181692
+Name: Jungnanggu, Men: 197118, Women: 202444
+Name: Seongbukgu, Men: 214658, Women: 232398
+Name: Gangbukgu, Men: 151466, Women: 160103
+Name: Dobonggu, Men: 159420, Women: 167941
+Name: Nowongu, Men: 254188, Women: 272844
+Name: Seodaemungu, Men: 153152, Women: 169800
+Name: Mapogu, Men: 178977, Women: 202881
+Name: Yangcheongu, Men: 224379, Women: 233402
+Name: Gangseogu, Men: 282686, Women: 303215
+Name: Gurogu, Men: 215424, Women: 217064
+Name: Geumcheongu, Men: 126141, Women: 121694
+Name: Yeongdeungpogu, Men: 202969, Women: 204398
+Name: Dongjakgu, Men: 193718, Women: 207854
+Name: Gwanakgu, Men: 255211, Women: 254592
+Name: Seochogu, Men: 205282, Women: 223743
+Name: Gangnamgu, Men: 260378, Women: 283677
+Name: Songpagu, Men: 325080, Women: 348846
+
+
+List after inserting Jongnogu
+Name: Jongnogu, Men: 76876, Women: 82120
+Name: Junggu, Men: 65776, Women: 68859
+Name: Yongsangu, Men: 118835, Women: 125810
+Name: Seongdonggu, Men: 146424, Women: 154081
+Name: Gwangjingu, Men: 173000, Women: 187109
+Name: Dongdaemungu, Men: 175322, Women: 181692
+Name: Jungnanggu, Men: 197118, Women: 202444
+Name: Seongbukgu, Men: 214658, Women: 232398
+Name: Gangbukgu, Men: 151466, Women: 160103
+Name: Dobonggu, Men: 159420, Women: 167941
+Name: Nowongu, Men: 254188, Women: 272844
+Name: Seodaemungu, Men: 153152, Women: 169800
+Name: Mapogu, Men: 178977, Women: 202881
+Name: Yangcheongu, Men: 224379, Women: 233402
+Name: Gangseogu, Men: 282686, Women: 303215
+Name: Gurogu, Men: 215424, Women: 217064
+Name: Geumcheongu, Men: 126141, Women: 121694
+Name: Yeongdeungpogu, Men: 202969, Women: 204398
+Name: Dongjakgu, Men: 193718, Women: 207854
+Name: Gwanakgu, Men: 255211, Women: 254592
+Name: Seochogu, Men: 205282, Women: 223743
+Name: Gangnamgu, Men: 260378, Women: 283677
+Name: Songpagu, Men: 325080, Women: 348846
+
+
+List after inserting Gangdonggu
+Name: Jongnogu, Men: 76876, Women: 82120
+Name: Junggu, Men: 65776, Women: 68859
+Name: Yongsangu, Men: 118835, Women: 125810
+Name: Seongdonggu, Men: 146424, Women: 154081
+Name: Gwangjingu, Men: 173000, Women: 187109
+Name: Dongdaemungu, Men: 175322, Women: 181692
+Name: Jungnanggu, Men: 197118, Women: 202444
+Name: Seongbukgu, Men: 214658, Women: 232398
+Name: Gangbukgu, Men: 151466, Women: 160103
+Name: Dobonggu, Men: 159420, Women: 167941
+Name: Nowongu, Men: 254188, Women: 272844
+Name: Seodaemungu, Men: 153152, Women: 169800
+Name: Mapogu, Men: 178977, Women: 202881
+Name: Yangcheongu, Men: 224379, Women: 233402
+Name: Gangseogu, Men: 282686, Women: 303215
+Name: Gurogu, Men: 215424, Women: 217064
+Name: Geumcheongu, Men: 126141, Women: 121694
+Name: Yeongdeungpogu, Men: 202969, Women: 204398
+Name: Dongjakgu, Men: 193718, Women: 207854
+Name: Gwanakgu, Men: 255211, Women: 254592
+Name: Seochogu, Men: 205282, Women: 223743
+Name: Gangnamgu, Men: 260378, Women: 283677
+Name: Songpagu, Men: 325080, Women: 348846
+Name: Gangdong, Men: 228044, Women: 235954
+
+
+List after inserting Eunpyeonggu
+Name: Jongnogu, Men: 76876, Women: 82120
+Name: Junggu, Men: 65776, Women: 68859
+Name: Yongsangu, Men: 118835, Women: 125810
+Name: Seongdonggu, Men: 146424, Women: 154081
+Name: Gwangjingu, Men: 173000, Women: 187109
+Name: Dongdaemungu, Men: 175322, Women: 181692
+Name: Jungnanggu, Men: 197118, Women: 202444
+Name: Seongbukgu, Men: 214658, Women: 232398
+Name: Gangbukgu, Men: 151466, Women: 160103
+Name: Dobonggu, Men: 159420, Women: 167941
+Name: Nowongu, Men: 254188, Women: 272844
+Name: Eunpyeonggu, Men: 231998, Women: 252045
+Name: Seodaemungu, Men: 153152, Women: 169800
+Name: Mapogu, Men: 178977, Women: 202881
+Name: Yangcheongu, Men: 224379, Women: 233402
+Name: Gangseogu, Men: 282686, Women: 303215
+Name: Gurogu, Men: 215424, Women: 217064
+Name: Geumcheongu, Men: 126141, Women: 121694
+Name: Yeongdeungpogu, Men: 202969, Women: 204398
+Name: Dongjakgu, Men: 193718, Women: 207854
+Name: Gwanakgu, Men: 255211, Women: 254592
+Name: Seochogu, Men: 205282, Women: 223743
+Name: Gangnamgu, Men: 260378, Women: 283677
+Name: Songpagu, Men: 325080, Women: 348846
+Name: Gangdong, Men: 228044, Women: 235954
+Number of Men in Seoul: 4816522, Number of Women in Seoul: 5094566
+
+Output elements using ListIterate function
+Name: Jongnogu, Men: 76876, Women: 82120
+Name: Junggu, Men: 65776, Women: 68859
+Name: Yongsangu, Men: 118835, Women: 125810
+Name: Seongdonggu, Men: 146424, Women: 154081
+Name: Gwangjingu, Men: 173000, Women: 187109
+Name: Dongdaemungu, Men: 175322, Women: 181692
+Name: Jungnanggu, Men: 197118, Women: 202444
+Name: Seongbukgu, Men: 214658, Women: 232398
+Name: Gangbukgu, Men: 151466, Women: 160103
+Name: Dobonggu, Men: 159420, Women: 167941
+Name: Nowongu, Men: 254188, Women: 272844
+Name: Eunpyeonggu, Men: 231998, Women: 252045
+Name: Seodaemungu, Men: 153152, Women: 169800
+Name: Mapogu, Men: 178977, Women: 202881
+Name: Yangcheongu, Men: 224379, Women: 233402
+Name: Gangseogu, Men: 282686, Women: 303215
+Name: Gurogu, Men: 215424, Women: 217064
+Name: Geumcheongu, Men: 126141, Women: 121694
+Name: Yeongdeungpogu, Men: 202969, Women: 204398
+Name: Dongjakgu, Men: 193718, Women: 207854
+Name: Gwanakgu, Men: 255211, Women: 254592
+Name: Seochogu, Men: 205282, Women: 223743
+Name: Gangnamgu, Men: 260378, Women: 283677
+Name: Songpagu, Men: 325080, Women: 348846
+Name: Gangdong, Men: 228044, Women: 235954
