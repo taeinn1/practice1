@@ -21,6 +21,7 @@ int ReadPopulationData(FILE* f, PopulationData* p)
 {
     if (f && p) {
         int n = fscanf(f, "%s %d %d", p->name, &p->men, &p->women);
+        
         return n == 3;
     }
     return 0;

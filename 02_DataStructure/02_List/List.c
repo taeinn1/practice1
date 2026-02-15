@@ -21,11 +21,15 @@ ListNode* fpren(List* list, ListNode* next) {
 		r = p;
 		p = p->next;
 	}
-	if (p) {
-		return r;
-	}
+	
+	return r;
+	
 	// p가 끝이어도(next를 못찾아도)r을 리턴해야함 (이거하지마_> return NULL;
 	//왜냐. 그럼 head가 next인거랑 똑같은 결과라서.
+	//아님!!!!!! NULL해야함. 
+	//왜냐. 이함수의 사용자는 tail이 return되면 next가  없는거란걸 모름. (만든 나만 알아)
+	//그래서 그냥 앞이든 없든 NULL로 출력하고,
+	//사용자 자체가 if(NULL && head !=next)//next없음// 이렇게 해야 안전함.
 }
 
 
@@ -41,7 +45,7 @@ List* LstCreate(void) {
 }
 
 int LstEmpty(const List* list) {
-	if (list && list->head == list->tail == NULL) //이것 자체를 return
+	if (list && list->head ==NULL && list->tail == NULL) //이것 자체를 return
 		return 1;
 	else
 		return 0;
@@ -51,9 +55,9 @@ int LstPushFront(List* list, const LstElement* e) {
 	ListNode* p = (ListNode*)malloc(sizeof(ListNode));
 	if (list && p) {
 		p->element = *e;
-		p->next = list->head->next;
+		p->next = list->head;
 		list->head = p;
-		if (LstEmpty(list))
+		if (list->tail==NULL)
 			list->tail = p;
 
 		return 1;
@@ -64,7 +68,7 @@ int LstPushFront(List* list, const LstElement* e) {
 int LstPushBack(List* list, const LstElement* e) {
 	if (list) {
 		ListNode* p = cln(e);
-		if (LstEmpty) {
+		if (LstEmpty(list)) {
 			list->head = list->tail = p;
 		}
 		else {
@@ -81,19 +85,17 @@ int LstGetEntry(List* list, int pos, LstElement* e) {
 	p = list->head;              //= 그냥 ListNode* p=list->head
 	int num = 0;
 	if (pos >= 0)
-		while (1) {
+		while (p) {
 			if (num++ == pos) {
 				*e = p->element;
-				free(p);
+				//free(p); //이건 포인터를 free하는게 아니고 포인터가 가리키는 공간을 없애는거임!!
 				return 1;
 			}
-			if (p == list->tail && num != pos)
-				free(p);
-				return 0;
-
+			p = p->next;
 		}
+	return 0;
 }
-
+/*밤에 정신없이 한거
 int LstInsertBefore(List* list, ListNode* next, const LstElement* e) {
 	ListNode* node = cln(e);
 	if (list) {
@@ -113,15 +115,15 @@ int LstInsertBefore(List* list, ListNode* next, const LstElement* e) {
 		return 0;
 	}
 }
-
+*/
 
 int LstInsertBefore(List* list, ListNode* next, const LstElement* e) {
 	if (list && next && list->head) {
 		ListNode* p;
-		if (p) {
+		//if (p) { 포인터 할당이아닌, 생성만 하는건 항상 true!!
 			p = fpren(list, next);
 			if (p) {
-				if (p != list->tail)
+				if (p == list->tail)
 					return 0;
 				return LstInsertAfter(list, p, e);
 				/*위 한줄 대신 썼던 것
@@ -138,7 +140,7 @@ int LstInsertBefore(List* list, ListNode* next, const LstElement* e) {
 				return LstPushFront(list, e);
 			}
 		}
-	}
+	
 	return 0;
 }
 
@@ -167,15 +169,18 @@ int LstInsertAfter(List* list, ListNode* previous, const LstElement* e) {
 
 
 int LstInsert(List* list, int pos, const LstElement* e) {
-	if (list && list->head &&pos!=0) {
+	if (list && list->head &&pos>=0) {
 		ListNode* p=list->head;
 		int i = 0;
 		while (i != pos && p) {
 			p = p->next;
 			i++;
 		}
-		if (i = pos) {
-			LstInsertAfter(list, p, e);
+		if (i == pos) {
+			if (i == 0)
+				LstInsertBefore(list, p, e);
+			else
+				LstInsertAfter(list, p, e);
 			return 1;
 		}
 		else {
@@ -183,6 +188,7 @@ int LstInsert(List* list, int pos, const LstElement* e) {
 		}
 
 	}
+	return 0;
 }
 
 void LstPrint(List* list, PrintFunc print) {
@@ -196,21 +202,29 @@ void LstPrint(List* list, PrintFunc print) {
 int LstDelete(List* list, ListNode* node) {
 	if (list && node && list->head) {
 		ListNode* p = fpren(list, node);
-		if (p == NULL) {
-			list->head = list->tail = 0;
+		if (!p) {
+			if (list->tail == node) {
+				list->head = NULL;
+				list->tail = NULL;
+				free(node);
+				return 1;
+			}
+			p = list->head->next;
+			free(list->head); 
+			list->head = p;
+			return 1;
+		}
+		else if(p!=list->tail){
+			if (list->tail == node) {
+				p->next = NULL;
+				list->tail = p;
+				free(node);
+				return 1;
+			}
+			p->next = node->next;
 			free(node);
 			return 1;
 		}
-		else if (p == list->tail) {
-			return 0;
-		}
-		if (p->next == list->tail) {
-			list->tail = p;
-		}
-
-		p->next = node->next;
-		free(node);
-		return 1;
 	}
 	return 0;
 }
@@ -229,4 +243,34 @@ void LstClear(List* list) {
 	//하긴 노드 하나하나는 개별적인 독립체고 연결만 된거니까
 }
 
-ListNode* LstFindNode(List* list, const LstElement* e, CompareFunc compare);
+ListNode* LstFindNode(List* list, const LstElement* e, CompareFunc compare) {
+	ListNode* p = list->head;
+	if (list && p) {
+		while (p&&!compare(&p->element,e)) {
+			p = p->next;
+		}
+		if (p) {
+			return p;
+		}
+	}
+	return NULL;
+}
+
+void LstIterate(List* list, IterateFunc iterate, void* p) {
+	ListNode* temp= list->head;
+	if (temp && list) {
+		while (temp) {
+			iterate(&temp->element, p);
+			temp = temp->next;
+		}
+	}
+}
+
+void LstDestroy(List* list) {
+	LstClear(list);
+	if (list)
+		free(list);
+}
+
+
+typedef void (*IterateFunc)(const LstElement* e, void* p);
